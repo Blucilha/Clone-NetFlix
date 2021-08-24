@@ -1,12 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <!--Css do Owl-->
+    <link rel="stylesheet" href="./style/owl/owl.carousel.min.css">
+    <link rel="stylesheet" href="./style/owl/owl.theme.default.min.css">
     <title>Clone da Netflix</title>
 </head>
 <body>
-    
+    <header>
+        <div class="container">
+            <img class="logo" src="./img/netflix-logo-6.png" alt="netflix-logo">
+            <nav>
+                <a href="a">Início</a>
+                <a href="b">Séries</a>
+                <a href="c">Filmes</a>
+                <a href="d">Bombando</a>
+                <a href="e">Minha lista</a>
+                <a href="f">Reveja</a>
+            </nav>
+        </div>
+        <div class="box-search">
+            <i class="fas fa-search"></i>
+            <p class="categoria">INFANTIL</p>
+            <i class="fas fa-bell"></i>
+            <img src="./img/perfil.jpg" alt="imagem de perfil">
+        </div>
+    </header>
+    <main>
+        <div class="cartaz-principal">
+            <div class="container">
+                <h2 class="titulo-principal">A Viagem de Chihiro (2001)</h2>
+                <p class="descricao-principal">Chihiro chega num mundo mágico dominado por uma bruxa. Aqueles que desobedecem são transformados em animais.</p>
+                <div class="botoes">
+                    <button href="g" id= "assistir"><i class="fas fa-play"></i>Assistir</button>
+                    <button href="h" id= "informacao"><i class="fas fa-info-circle"></i>Mais informações</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="box-movies">
+        <h3>Só na Netflix ></h3>
+        <div class="owl-carousel owl-theme">
+            <div class="box-film">
+                <img src="./img/carousel/breaking_bad.jpg">
+            </div>
+            <div class="box-film">
+                <img src="./img/carousel/casa_de_papel.jpg">
+            </div>
+            <div class="box-film">
+                <img src="./img/carousel/game_of_thrones.jpg">
+            </div>
+            <div class="box-film">
+                <img src="./img/carousel/loki.jpg">
+            </div>
+            <div class="box-film">
+                <img src="./img/carousel/stranger_thing.jpg">
+            </div>
+            <div class="box-film">
+                <img src="./img/carousel/the_witcher.jpg">
+            </div>
+            <div class="box-film">
+                <img src="./img/carousel/umbrella_academy.jpg">
+            </div>
+            <div class="box-film">
+                <img src="./img/carousel/vikings.jpg">
+            </div>
+        </div>
+    </div>
 </body>
+<script src="https://kit.fontawesome.com/de1950a5ba.js" crossorigin="anonymous"></script>
+<!--Script owl-->
+<script src="./script/owl/jquery.min.js"></script>
+<script src="./script/owl/owl.carousel.min.js"></script>
+<script src="./script/owl/setup.js"></script>
 </html>
