@@ -1,0 +1,157 @@
+:root {
+    --vermelho: #E50914;
+    --preto: #141414;
+    --branco: #ffffff;
+    --branco_gelo: #AAA;
+    --cinza_botao: rgb(121, 118, 118);
+    --cinza_botao_escuro: rgb(88, 87, 87);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    color: var(--branco);
+}
+
+body {
+    background-color: var(--preto);
+    font-family: 'Times New Roman', Times, serif;
+    width: 95%;
+    margin-left: 70px;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    width: 95%;
+    justify-content: space-between;
+}
+
+header .logo {
+    width: 150px;
+    padding: 20px;
+}
+
+header .box-search {
+    display: flex;
+    align-items: center;
+    margin-right: 60px;
+}
+
+header .box-search img, p, i {
+    margin: 15px;
+}
+
+header .box-search img {
+    width: 35px;
+    height: 35px;
+    border-radius: 3px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .container .logo {
+    color: var(--vermelho);
+    font-family: 'Arial Black', 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+header .container nav {
+    margin-right: 25px;
+}
+
+header .container nav a {
+    color: var(--branco_gelo);
+    margin-right: 10px;
+}
+
+header .container nav a:hover {
+    color: var(--branco);
+}
+
+/* Filme em destaque */
+
+.cartaz-principal {
+    font-size: 18px;
+    background: no-repeat linear-gradient(rgba(0, 0, 0, 0.8), rgba(0,0,0,0.5)100%) ,url('/img/a_viagem_de_chihiro.jpg');
+    background-size: cover;
+
+    height: 600px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.titulo-principal {
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    margin-top: 180px;
+}
+
+.descricao-principal {
+    margin-bottom: 20px;
+}
+
+.cartaz-principal .container {
+    width: 400px;
+    margin-left: 25px;
+}
+
+.botoes button {
+    padding: 5px 15px;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s ease;
+}
+
+.botoes #assistir:hover {
+    background-color: var(--branco_gelo);
+}
+
+.botoes #informacao:hover {
+    background-color: var(--cinza_botao_escuro);
+}
+
+.botoes #assistir {
+    border-radius: 3px;
+    color: var(--preto);
+    background-color: var(--branco);
+    font-weight: bolder;
+    margin-right: 10px;
+}
+
+.botoes #informacao {
+    border-radius: 3px;
+    color: var(--branco);
+    background-color: var(--cinza_botao);
+    font-weight: bolder;
+}
+
+.fas {
+    margin-right: 5px;
+}
+
+.fa-play {
+    color: var(--preto);
+}
+
+.fa-info-circle {
+    color: var(--branco);
+}
+
+.box-movies {
+    margin-top: 3%;
+    width: 100%;
+    position: relative;
+}
+
+.box-movies .owl-carousel .box-film {
+    width: 100%;
+}
